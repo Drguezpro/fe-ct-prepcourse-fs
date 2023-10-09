@@ -1,11 +1,8 @@
-function sonIguales(x, y) {
-    // Retorna true si "x" e "y" son iguales.
-    // De lo contrario, retorna false.
-    // Tu código:
-    if (x == y) {
+function esImpar(num) {
+    
+    if (num % 2 != 0) {
        console.log (true);
     } else {
        console.log (false)
     }
- }
- 
+}
