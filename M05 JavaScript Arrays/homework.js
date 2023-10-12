@@ -76,7 +76,7 @@ function promedioResultadosTest(resultadosTest) {
    // Itera (en un bucle) los elementos del arreglo y devuelve el promedio de las notas.
    // Tu código:
    var suma = 0;
-   for (i = 0; i< arrayOfNums.length; i++) {
+   for (i = 0; i< resultadosTest.length; i++) {
       suma = (suma + resultadosTest [i]);
    }
    var promedio = (suma / resultadosTest.length);
@@ -126,7 +126,7 @@ function diaDeLaSemana(numeroDeDia) {
    if (numeroDeDia === 1 || numeroDeDia === 7) {
       return ('Es fin de semana');
    } else if (numeroDeDia > 1 && numeroDeDia < 7){
-      return ('Es día laboral');
+      return ('Es dia laboral');
    }
 }
 
@@ -183,7 +183,7 @@ function tablaDelSeis() {
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
    // Tu código:
    var tabla = [];
-   for (var i = 0; i < 61; i++) {
+   for (var i = 0; i < 11; i++) {
       tabla.push (6 * i);
    }
    return tabla;
@@ -219,9 +219,9 @@ function breakStatement(num) {
          num = num + 2;
          array.push (num);
       if (num === i){
-        break;
          return ('Se interrumpió la ejecución');
-        }
+         break;
+         }
       }
       return array;
    }
@@ -238,7 +238,7 @@ function continueStatement(num) {
       
       for (var i = 1; i < 11; i++) { 
          num = num + 2;
-         if (5 === i){
+         if (i === 5){
         continue;
          }
       array.push (num);  
