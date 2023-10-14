@@ -72,9 +72,9 @@ function tieneEmail(objetoUsuario) {
    // Verifica si el "objetoUsuario", en su propiedad "email", posee un valor definido.
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
-    if (objetoUsuario.email !== undefined) {
+    if (objetoUsuario.email !== undefined && objetoUsuario.email !== null) {
       return true;
-    } else if (objetoUsuario.email === undefined) {
+    } else  {
       return false;
     }
 }
@@ -157,8 +157,9 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
    objetoProducto.calcularPrecioDescuento = function () {
       var descuento = this.precio * this.porcentajeDeDescuento;
       var precioFinal = objetoProducto.precio - descuento;
-      return precioFinal
-   };
+      return precioFinal;
+      };
+   return objetoProducto;
 }
 
 
