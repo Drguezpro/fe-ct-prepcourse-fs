@@ -185,7 +185,7 @@ function esPrimo(num) {
 
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
-   // Caso contrario, retornar "Soy fal;so".
+   // Caso contrario, retornar "Soy falso".
    // Tu código:
    if (valor === true) {
       return ('Soy verdadero');
